@@ -6,6 +6,6 @@ block content
   h2 Add a message to the message board
 
   form(method="POST" action="/new")
-    textarea.text(name="msgTxt" placeholder="Your message")
-    input.name(name="msgAuthor" placeholder="Your name")
+    textarea(name="msgTxt" placeholder="Your message" required)
+    input(name="msgAuthor" placeholder="Your name")
     button Submit

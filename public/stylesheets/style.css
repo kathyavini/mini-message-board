@@ -1,6 +1,6 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10vw;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -12,13 +12,18 @@ a {
 }
 
 .message {
-  margin-block: 2.5rem;
+  margin-block: 3rem;
   max-width: min(90vw, 600px);
-  min-width: fit-content;
+}
+
+.message p {
+  padding-top: .4rem;
+  opacity: .6;
 }
 
 form {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
+  max-width: min(90vw, 600px);
 }

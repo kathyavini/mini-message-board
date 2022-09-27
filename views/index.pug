@@ -10,6 +10,6 @@ block content
   main
     each message in messages
       div.message
-        h2= message.text
-        h3= message.user 
-        p= message.added 
+        h3= message.user ? message.user : "Anonymous"
+        h2= message.text 
+        p Posted #{formatDistanceToNow(message.added, {includeSeconds: true})} ago
