@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+.add {
+  padding-top: .5rem;
+}
+
+.message {
+  margin-block: 2.5rem;
+  max-width: min(90vw, 600px);
+  min-width: fit-content;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}

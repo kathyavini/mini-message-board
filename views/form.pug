@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  p Welcome to #{title}
+
+  h2 Add a message to the message board
+
+  form(method="POST" action="/new")
+    textarea.text(name="msgTxt" placeholder="Your message")
+    input.name(name="msgAuthor" placeholder="Your name")
+    button Submit
